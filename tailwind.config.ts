@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,34 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				pokemon: {
+					red: '#FF5350',
+					blue: '#3B4CCA',
+					yellow: '#FFDE00',
+					gold: '#B3A125',
+					light: '#F8F8F8',
+					dark: '#333333',
+				},
+				type: {
+					normal: '#A8A878',
+					fire: '#F08030',
+					water: '#6890F0',
+					grass: '#78C850',
+					electric: '#F8D030',
+					ice: '#98D8D8',
+					fighting: '#C03028',
+					poison: '#A040A0',
+					ground: '#E0C068',
+					flying: '#A890F0',
+					psychic: '#F85888',
+					bug: '#A8B820',
+					rock: '#B8A038',
+					ghost: '#705898',
+					dark: '#705848',
+					dragon: '#7038F8',
+					steel: '#B8B8D0',
+					fairy: '#EE99AC',
 				}
 			},
 			borderRadius: {
@@ -84,11 +113,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-light': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
+				},
+				'rotate': {
+					'0%': {
+						transform: 'rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-light': 'pulse-light 2s ease-in-out infinite',
+				'rotate': 'rotate 2s linear infinite'
 			}
 		}
 	},
