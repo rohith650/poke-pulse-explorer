@@ -137,6 +137,27 @@ export default {
 					'100%': {
 						transform: 'rotate(360deg)'
 					}
+				},
+				'shake': {
+					'0%, 100%': {
+						transform: 'translateX(0)'
+					},
+					'20%, 60%': {
+						transform: 'translateX(-5px)'
+					},
+					'40%, 80%': {
+						transform: 'translateX(5px)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.95)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
 				}
 			},
 			animation: {
@@ -144,7 +165,9 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'pulse-light': 'pulse-light 2s ease-in-out infinite',
-				'rotate': 'rotate 2s linear infinite'
+				'rotate': 'rotate 2s linear infinite',
+				'shake': 'shake 0.5s cubic-bezier(.36,.07,.19,.97) both',
+				'scale-in': 'scale-in 0.2s ease-out'
 			}
 		}
 	},
